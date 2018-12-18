@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1039488152800",
+    "firebase_url": "https://gestion-final.firebaseio.com",
+    "project_id": "gestion-final",
+    "storage_bucket": "gestion-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039488152800:android:8b42b2c18a7b0244",
+        "android_client_info": {
+          "package_name": "com.alain.mk.mygestion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039488152800-a9k611k0tpa6lnlbr2690eco32a175sp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alain.mk.mygestion",
+            "certificate_hash": "23395cb82d18cac8f9d8f9304c62aad191387d2c"
+          }
+        },
+        {
+          "client_id": "1039488152800-5d3sjbima2lr3rn5as1pi18h44vuqmus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcT9EuT0HtcRF_Ma_Ra9jxEcGRtkRa5Ko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039488152800-5d3sjbima2lr3rn5as1pi18h44vuqmus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
