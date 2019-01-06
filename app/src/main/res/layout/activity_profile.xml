@@ -11,7 +11,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-75dp"
         android:gravity="center"
         android:orientation="vertical"
         android:layout_weight="1">
@@ -75,6 +74,31 @@
                 android:paddingLeft="@dimen/default_margin"/>
 
         </LinearLayout>
-
     </LinearLayout>
+
+        <!-- BUTTONS CONTAINER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+
+            <!-- BUTTON SIGN OUT -->
+            <Button
+                android:id="@+id/profile_activity_button_sign_out"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_sign_out_account"
+                android:textColor="#fff"
+                android:textSize="@dimen/default_text_size"
+                android:background="@drawable/button_radius_accent_col"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_margin="@dimen/default_margin"
+                android:padding="@dimen/default_margin"/>
+
+
+        </LinearLayout>
+
 </LinearLayout>

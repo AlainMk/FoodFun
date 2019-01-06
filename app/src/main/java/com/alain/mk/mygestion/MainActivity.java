@@ -5,6 +5,7 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.widget.Button;
 
+import com.alain.mk.mygestion.api.UserHelper;
 import com.alain.mk.mygestion.auth.ProfileActivity;
 import com.alain.mk.mygestion.base.BaseActivity;
 import com.alain.mk.mygestion.register.RegisterActivity;
@@ -58,12 +59,29 @@ public class MainActivity extends BaseActivity {
     }
 
     @OnClick(R.id.main_activity_button_register)
-    public void onClickChatButton() {
+    public void onClickRegisterButton() {
         // Check if user is connected before launching MentorActivity
         if (this.isCurrentUserLogged()){
             this.startRegisterActivity();
         } else {
             this.showSnackBar(this.coordinatorLayout, getString(R.string.error_not_connected));
+        }
+    }
+
+    // --------------------
+    // REST REQUEST
+    // --------------------
+
+    // Http request that create user in firestore
+    private void createUserInFirestore(){
+
+        if (this.getCurrentUser() != null){
+
+            String urlPicture = (this.getCurrentUser().getPhotoUrl() != null) ? this.getCurrentUser().getPhotoUrl().toString() : null;
+            String username = this.getCurrentUser().getDisplayName();
+            String uid = this.getCurrentUser().getUid();
+
+            UserHelper.createUser(uid, username, urlPicture).addOnFailureListener(this.onFailureListener());
         }
     }
 
@@ -87,6 +105,8 @@ public class MainActivity extends BaseActivity {
 
         if (requestCode == RC_SIGN_IN) {
             if (resultCode == RESULT_OK) { // SUCCESS
+                // CREATE USER IN FIRESTORE
+                this.createUserInFirestore();
                 showSnackBar(this.coordinatorLayout, getString(R.string.connection_succeed));
             } else { // ERRORS
                 if (response == null) {

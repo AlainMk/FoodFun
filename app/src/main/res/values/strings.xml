@@ -37,4 +37,8 @@
     <string name="popup_message_choice_yes">Oui !</string>
     <string name="popup_message_choice_no">Non</string>
     <string name="check_box_is_mentor">Etes-vous un mentor ?</string>
+
+    <!-- REGISTER ACTIVITY -->
+    <string name="register_succeed">Enregistrement réussi !</string>
+    <string name="error_register_canceled">Enregistrement annulé&#8230;</string>
 </resources>

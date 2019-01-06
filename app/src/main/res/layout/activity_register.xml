@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/AppTheme"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main_activity_coordinator_layout"
     android:orientation="vertical"
     tools:context="com.alain.mk.mygestion.register.RegisterActivity">
 
@@ -15,14 +16,16 @@
             android:paddingTop="20dp">
 
             <ImageView
+                android:id="@+id/register_activity_firebase"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/userphoto"
                 android:layout_gravity="center"
+                android:tag="10"
                 android:layout_marginTop="0dp"/>
 
-            <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/reg_username"
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_activity_nameInput"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -36,8 +39,8 @@
                 android:textColorHint="@color/darker_gray"/>
 
 
-            <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/reg_mobile"
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_activity_inputNumber"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -66,4 +69,4 @@
 
         </LinearLayout>
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
