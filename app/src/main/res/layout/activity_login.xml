@@ -6,12 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main_activity_coordinator_layout"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context="com.alain.mk.mygestion.register.RegisterActivity">
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -31,45 +28,62 @@
                 android:layout_marginTop="0dp"/>
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/register_activity_nameInput"
+                android:id="@+id/login_activity_nameInput"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/input_background"
+                android:textAlignment="center"
+                android:layout_margin="@dimen/default_large_margin"
+                android:inputType="text"
+                android:hint="Votre code"
+                android:padding="15dp"
+                android:textColor="@color/colordark"
+                android:textColorHint="@color/darker_gray"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_activity_email"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:drawableStart="@drawable/person"
+                android:background="@drawable/input_background"
                 android:layout_margin="@dimen/default_large_margin"
-                android:inputType="text"
-                android:hint="@string/username"
+                android:inputType="textEmailAddress"
+                android:hint="Email..."
+                android:padding="15dp"
                 android:textColor="@color/colordark"
                 android:textColorHint="@color/darker_gray"/>
 
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/register_activity_inputNumber"
+                android:id="@+id/login_activity_inputpassword"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
                 android:textAlignment="center"
-                android:drawableStart="@drawable/phone"
+                android:background="@drawable/input_background"
                 android:layout_margin="@dimen/default_large_margin"
-                android:inputType="phone"
-                android:hint="@string/phone_number"
+                android:inputType="textPassword"
+                android:hint="Password..."
+                android:padding="15dp"
                 android:textColor="@color/colordark"
                 android:textColorHint="@color/darker_gray"/>
 
 
             <Button
-                android:id="@+id/register_activity_button_register"
+                android:id="@+id/login_activity_button_login"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/button_radius_primary_col"
+                android:background="@drawable/button_radius_accent_col"
                 android:textColor="#fff"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_margin="@dimen/default_large_margin"
-                android:text="@string/sign_up"
+                android:text="ENREGISTRER"
                 />
 
             <LinearLayout
@@ -78,17 +92,16 @@
                 >
 
                 <TextView
-                    android:id="@+id/register_activity_text_see"
+                    android:id="@+id/sigin_activity_text_see"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="true"
-                    android:text="@string/see_list_of_register"
+                    android:text="Vous avez déjà un compte? Connexion"
                     android:textColor="@color/colorAccent"
                     android:textSize="16sp"
                     android:layout_marginBottom="10dp"/>
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

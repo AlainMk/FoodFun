@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">MyGestion</string>
+    <string name="app_name">Alter Ego</string>
 
-    <string name="main_activity_description">Enregistre des nouveaux membres, tout simplement.</string>
+    <string name="main_activity_description">Enregistre des nouvelles personnes, tout simplement.</string>
 
     <string name="login">Connexion</string>
     <string name="chat_with_mentor">Enregistrer des membres</string>
     <string name="sign_up">enregistrer</string>
     <string name="toolbar_title_register_activity">Enregistrement</string>
 
-    <string name="username">username</string>
-    <string name="phone_number">0812874638</string>
+    <string name="username">nom complet</string>
+    <string name="phone_number">0810000000</string>
 
     <!-- NOTIFICATION SERVICE -->
     <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
@@ -25,6 +25,8 @@
     <string name="button_login_text_not_logged">Connexion</string>
 
     <!-- LOGIN ACTIVITY -->
+    <string name="sing_in">Connexion</string>
+    <string name="create_account">Inscription</string>
     <string name="toolbar_title_login_activity">Votre Profil</string>
     <string name="text_input_username">Nom d\'utilisateur</string>
     <string name="text_view_login">Login :</string>
@@ -41,4 +43,7 @@
     <!-- REGISTER ACTIVITY -->
     <string name="register_succeed">Enregistrement réussi !</string>
     <string name="error_register_canceled">Enregistrement annulé&#8230;</string>
+
+    <string name="see_list_of_register">Voir les enregistrements</string>
+    <string name="toolbar_title_list_register">Vos enregistrements</string>
 </resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_activity_coordinator_layout"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.alain.mk.mygestion.auth.Sigin">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/register_activity_firebase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/userphoto"
+            android:layout_gravity="center"
+            android:tag="10"
+            android:layout_marginTop="0dp"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sigin_activity_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/input_background"
+            android:layout_margin="@dimen/default_large_margin"
+            android:inputType="textEmailAddress"
+            android:hint="Email..."
+            android:padding="15dp"
+            android:textColor="@color/colordark"
+            android:textColorHint="@color/darker_gray"/>
+
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/sigin_activity_inputpassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/input_background"
+            android:layout_margin="@dimen/default_large_margin"
+            android:inputType="textPassword"
+            android:hint="Password..."
+            android:padding="15dp"
+            android:textColor="@color/colordark"
+            android:textColorHint="@color/darker_gray"/>
+
+
+        <Button
+            android:id="@+id/sigin_activity_button_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_radius_accent_col"
+            android:textColor="#fff"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_margin="@dimen/default_large_margin"
+            android:text="CONNEXION"
+            />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

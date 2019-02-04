@@ -9,20 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!-- PROFILE ACTIVITY -->
-        <activity android:name=".auth.ProfileActivity"
+        <activity
+            android:name=".auth.LoginActivity"
+            android:label="@string/create_account"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".auth.SiginActivity"
+            android:label="@string/sing_in"
+            android:parentActivityName=".auth.LoginActivity" /> <!-- PROFILE ACTIVITY -->
+        <activity
+            android:name=".auth.ProfileActivity"
             android:label="@string/toolbar_title_login_activity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".register.RegisterActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".register.RegisterActivity"
             android:label="@string/toolbar_title_register_activity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".detail.DetailActivity"
+            android:label="@string/toolbar_title_list_register"
+            android:parentActivityName=".register.RegisterActivity" />
     </application>
 
 </manifest>
